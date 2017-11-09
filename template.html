@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Test</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--Font Awesome-->
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<!--Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-table.css" rel="stylesheet">
+		<!--Bootstrap datepicker-->
+		<link href="css/bootstrap-datepicker.standalone.min.css" rel="stylesheet">
+		<!--Custom CSS-->
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container-fluid">
+				<div class="space-bottom"></div>
+				<!--PRIMER PANEL-->
+				<div class="panel panel-primary" id="seccion1">
+					<div class="panel-heading">
+						<label>Sección 1</label>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<!--IZQUIERDA-->
+							<div class="col-md-6">
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Texto</label>
+									</div>
+									<div class="col-md-10">
+										<input type="text" class="form-control" name="texto" id="text"/>
+									</div>
+								</div>
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Menu</label>
+									</div>
+									<div class="col-md-10">
+										<select class="form-control" id="idChannel" name="codeChannel">
+											<option selected="" value="-1">-- NO SELECCIONADO --</option>
+											<option value="1">OFICINA</option>
+											<option value="21">INMOBILIARIA</option>
+											<option value="22">CORREDORES</option>
+											<option value="23">C. INTERGRADOS</option>
+											<option value="24">REFERIDOS</option>
+											<option value="25">GRANDES BROKERS</option>
+											<option value="26">BROKERS</option>
+											<option value="27">CANALES REMOTOS</option>
+											<option value="29">TERRENO</option>
+											<option value="30">CASA USADA</option>
+											<option value="31">REFINANCIAMIENTO</option>
+											<option value="32">WEB</option>
+											<option value="33">FINES GENERALES</option>
+											<option value="34">VIDA SECURITY</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<!--FIN IZQUIERDA-->
+							<!--DERECHA-->
+							<div class="col-md-6">
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Teléfono</label>
+									</div>
+									
+									<div class="col-md-2">
+										<input type="text" class="form-control" name="telefono-area" id="telefono-area" placeholder="2"/>
+									</div>
+										
+									<div class="col-md-8">
+										<input type="text" class="form-control" name="telefono" id="telefono" placeholder="2323XXX"/>
+									</div>
+							
+								</div>
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Radio</label>
+									</div>
+									
+									<div class="col-md-1">
+										<input type="radio" value="valor1" name="radio-ejemplo"\>
+									</div>
+									<div class="col-md-4">
+										<label>Opcion 1</label>
+									</div>
+									
+									<div class="col-md-1">
+										<input type="radio" value="valor2" name="radio-ejemplo"\>
+									</div>
+									<div class="col-md-4">
+										<label>Opcion 2</label>
+									</div>
+
+								</div>
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Checkbox</label>
+									</div>
+									<div class="col-md-10">
+										<input type="checkbox" class="form-check-input" name="checkbox-ejemplo" id="checkbox-ejemplo"/>
+									</div>
+								</div>
+							</div>
+							<!--FIN DERECHA-->
+						</div>
+					</div>
+				</div>
+				<!--FIN PRIMER PANEL-->
+				<!--SEGUNDO PANEL-->
+				<div class="panel panel-primary" id="seccion2">
+					<div class="panel-heading">
+						<label>Sección 2</label>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<!--IZQUIERDA-->
+							<div class="col-md-6">
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Fecha</label>
+									</div>
+									<div class="col-md-10">
+										<div class="input-group date" name="calendar" id="calendar">
+											<input type="text" class="form-control"/>
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Texto + Checkbox</label>
+									</div>
+									<div class="col-md-5">
+										<input type="text" class="form-control" name="texto" id="texto"/>
+									</div>
+									<div class="col-md-1">
+										<input type="checkbox" class="form-check-input" name="checkbox-ejemplo" id="checkbox-ejemplo"/>
+									</div>
+									<div class="col-md-4">
+										<label>Checkbox</label>
+									</div>
+								</div>
+								
+							</div>
+							<!--FIN IZQUIERDA-->
+							<!--DERECHA-->
+							<div class="col-md-6">
+								
+								<div class="row">
+									<div class="col-md-2">
+										<label>Menu + Checkbox</label>
+									</div>
+									<div class="col-md-5">
+										<select class="form-control" id="idChannel" name="codeChannel">
+											<option selected="" value="-1">-- NO SELECCIONADO --</option>
+											<option value="1">OFICINA</option>
+											<option value="21">INMOBILIARIA</option>
+											<option value="22">CORREDORES</option>
+											<option value="23">C. INTERGRADOS</option>
+											<option value="24">REFERIDOS</option>
+											<option value="25">GRANDES BROKERS</option>
+											<option value="26">BROKERS</option>
+											<option value="27">CANALES REMOTOS</option>
+											<option value="29">TERRENO</option>
+											<option value="30">CASA USADA</option>
+											<option value="31">REFINANCIAMIENTO</option>
+											<option value="32">WEB</option>
+											<option value="33">FINES GENERALES</option>
+											<option value="34">VIDA SECURITY</option>
+										</select>
+									</div>
+									<div class="col-md-1">
+										<input type="checkbox" class="form-check-input" name="checkbox-ejemplo" id="checkbox-ejemplo"/>
+									</div>
+									<div class="col-md-4">
+										<label>Checkbox</label>
+									</div>
+								</div>
+								
+							</div>
+							<!--FIN DERECHA-->
+						</div>
+					</div>
+				</div>
+				<!--FIN SEGUNDO PANEL-->
+				<!--TERCER PANEL-->
+				<div class="panel panel-primary" id="seccion3">
+					<div class="panel-heading">
+						<label>Sección 3</label>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<!--IZQUIERDA-->
+							<div class="col-md-6">
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Fecha</label>
+									</div>
+									<div class="col-md-10">
+										<div class="input-group date" name="calendar2" id="calendar2">
+											<input type="text" class="form-control"/>
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Texto + Checkbox</label>
+									</div>
+									<div class="col-md-5">
+										<input type="text" class="form-control" name="texto" id="texto"/>
+									</div>
+									<div class="col-md-1">
+										<input type="checkbox" class="form-check-input" name="checkbox-ejemplo" id="checkbox-ejemplo"/>
+									</div>
+									<div class="col-md-4">
+										<label>Checkbox</label>
+									</div>
+								</div>
+								
+								<div class="row space-bottom">
+									<div class="col-md-2">
+										<label>Texto</label>
+									</div>
+									<div class="col-md-10">
+										<input type="text" class="form-control" id="texto" name="texto"/>
+									</div>
+								</div>
+								
+							</div>
+							<!--FIN IZQUIERDA-->
+							<!--DERECHA-->
+							<div class="col-md-6">
+								
+								<div class="row">
+									<div class="col-md-2">
+										<label>Menu + Checkbox</label>
+									</div>
+									<div class="col-md-5">
+										<select class="form-control" id="idChannel" name="codeChannel">
+											<option selected="" value="-1">-- NO SELECCIONADO --</option>
+											<option value="1">OFICINA</option>
+											<option value="21">INMOBILIARIA</option>
+											<option value="22">CORREDORES</option>
+											<option value="23">C. INTERGRADOS</option>
+											<option value="24">REFERIDOS</option>
+											<option value="25">GRANDES BROKERS</option>
+											<option value="26">BROKERS</option>
+											<option value="27">CANALES REMOTOS</option>
+											<option value="29">TERRENO</option>
+											<option value="30">CASA USADA</option>
+											<option value="31">REFINANCIAMIENTO</option>
+											<option value="32">WEB</option>
+											<option value="33">FINES GENERALES</option>
+											<option value="34">VIDA SECURITY</option>
+										</select>
+									</div>
+									<div class="col-md-1">
+										<input type="checkbox" class="form-check-input" name="checkbox-ejemplo" id="checkbox-ejemplo"/>
+									</div>
+									<div class="col-md-4">
+										<label>Checkbox</label>
+									</div>
+								</div>
+								
+							</div>
+							<!--FIN DERECHA-->
+						</div>
+					</div>
+				</div>
+				<!--FIN TERCER PANEL-->
+
+			<!--Panel botones-->
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="btn-group btn-group-justified">
+								<a class="btn btn-danger" title="Cerrar" name="close" id="close" value="Cerrar">
+									<span class="glyphicon glyphicon-fast-backward"></span><span class="btn-text">&nbsp;Cerrar</span>
+								</a>
+								<a class="btn btn-default" title="Limpiar" name="limpiar" id="limpiar" value="Limpiar">
+									<span class="glyphicon glyphicon-erase"></span><span class="btn-text">&nbsp;Limpiar</span>
+								</a>
+								<a class="btn btn-info" title="Buscar" name="buscar" id="buscar" value="Buscar">
+									<span class="glyphicon glyphicon-search"></span><span class="btn-text">&nbsp;Buscar</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--FIN Panel botones-->
+			
+			<!--Panel resultado-->
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<label>Resultados</label>
+				</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<div class="table-responsive">
+					<table class="table table-hover">
+						<caption>Ejemplo</caption>
+						<thead>
+							<tr>
+								<th>Campo 1</th>
+								<th>Campo 2</th>
+								<th>Campo 3</th>
+								<th>Campo 4</th>
+								<th>Campo 5</th>
+								<th>Campo 6</th>
+								<th>Campo 7</th>
+								<th>Campo 8</th>
+								<th>Campo 9</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>20140502007-A001A001</th>
+								<th>10.024.300-8</th>
+								<th>VERGARA REYES ANA LUISA</th>
+								<th>FULL FLEXIBLE AA2 </th>
+								<th>NO</th>
+								<th>PRINCIPAL VIDA CHILE</th>
+								<th>30/05/2014</th>
+								<th>VIGENTE</th>
+								<th class="text-center text-success list-action"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+							</tr>
+							<tr>
+								<th>20140502007-A001A001</th>
+								<th>10.024.300-8</th>
+								<th>VERGARA REYES ANA LUISA</th>
+								<th>FULL FLEXIBLE AA2 </th>
+								<th>NO</th>
+								<th>PRINCIPAL VIDA CHILE</th>
+								<th>30/05/2014</th>
+								<th>VIGENTE</th>
+								<th class="text-center text-success list-action"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+							</tr>
+							<tr>
+								<th>20140502007-A001A001</th>
+								<th>10.024.300-8</th>
+								<th>VERGARA REYES ANA LUISA</th>
+								<th>FULL FLEXIBLE AA2 </th>
+								<th>NO</th>
+								<th>PRINCIPAL VIDA CHILE</th>
+								<th>30/05/2014</th>
+								<th>VIGENTE</th>
+								<th class="text-center text-success list-action"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+							</tr>
+							<tr>
+								<th>20140502007-A001A001</th>
+								<th>10.024.300-8</th>
+								<th>VERGARA REYES ANA LUISA</th>
+								<th>FULL FLEXIBLE AA2 </th>
+								<th>NO</th>
+								<th>PRINCIPAL VIDA CHILE</th>
+								<th>30/05/2014</th>
+								<th>VIGENTE</th>
+								<th class="text-center text-success list-action"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+							</tr>
+							<tr>
+								<th>20140502007-A001A001</th>
+								<th>10.024.300-8</th>
+								<th>VERGARA REYES ANA LUISA</th>
+								<th>FULL FLEXIBLE AA2 </th>
+								<th>NO</th>
+								<th>PRINCIPAL VIDA CHILE</th>
+								<th>30/05/2014</th>
+								<th>VIGENTE</th>
+								<th class="text-center text-success list-action"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+							</tr>
+							<tr>
+								<th>20140502007-A001A001</th>
+								<th>10.024.300-8</th>
+								<th>VERGARA REYES ANA LUISA</th>
+								<th>FULL FLEXIBLE AA2 </th>
+								<th>NO</th>
+								<th>PRINCIPAL VIDA CHILE</th>
+								<th>30/05/2014</th>
+								<th>VIGENTE</th>
+								<th class="text-center text-success list-action"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></th>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+			</div>
+			<!--FIN Panel resultado-->
+		
+		</div>
+	</body>
+</html>
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.es.min.js"></script>
+<script type="text/javascript" src="js/boostrap-table.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-table-es-CL.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
